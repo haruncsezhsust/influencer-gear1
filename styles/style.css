@@ -1,0 +1,364 @@
+/* Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Declaring variables */
+
+:root {
+  --primary-color: #e02c6d;
+}
+
+/* Main Body */
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* others */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation Section Here */
+
+.Navigation-Container,
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 87px 120px 0;
+  align-items: center;
+}
+.Navigation-Container a,
+.hamburger {
+  font-size: 1rem;
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+/* Hamburger hidden for desktop */
+.hamburger {
+  display: none;
+}
+
+.logo a {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.menues {
+  display: flex;
+  gap: 34px;
+}
+
+.links li {
+  list-style: none;
+}
+
+/* Header Section Here */
+.hero-section {
+  gap: 133px;
+}
+
+.hero-title {
+  font-size: 3.2em;
+  line-height: 70px;
+}
+.hero-texts .description-texts {
+  font-size: 1em;
+}
+
+.description-text {
+  margin: 16px 0;
+}
+
+/* Action Button Here */
+.action-button {
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 41px;
+}
+
+.image-bg {
+  position: relative;
+  border: 2px solid #faf9f9;
+  border-radius: 50%;
+}
+
+.image-bg::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  background-color: #faf9f9;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Main Section Start Here */
+.main {
+  max-width: 1047px;
+  margin: 0 auto;
+}
+
+/* Clients Logo Section */
+.clients-logo {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 70px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-image: radial-gradient(#ccc8c8, #fff) 4;
+  padding: 35px 0;
+  align-items: center;
+}
+.clients-logo img {
+  width: 84px;
+  height: 25px;
+}
+
+/* Popular collections start here */
+.popular-collections {
+  margin-top: 100px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 30px;
+}
+
+.product {
+  background-color: white;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  padding: 17px 15px;
+  border-radius: 5px;
+}
+
+.section-title {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product img {
+  width: 300px;
+  height: 256px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+.product-name {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.product-price {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.product-rating,
+.coverage,
+.availability,
+.protection {
+  color: #787885;
+  font-size: 1em;
+  font-weight: 700;
+}
+.product-rating i {
+  color: #fb8200;
+  font-size: 0.7em;
+  margin-right: 5px;
+}
+
+.see-more-products {
+  margin-top: 50px;
+  text-align: right;
+  color: var(--primary-color);
+}
+
+/* Featured Products Styles here */
+.featured-products {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 96px;
+  align-items: center;
+}
+
+.feature-image img {
+  border-radius: 5px;
+  width: 404px;
+  height: 270px;
+}
+
+.feature-product-title {
+  font-size: 2.375em;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.featured-products .action-button{
+  border-radius: 0;
+}
+
+/* Footer styles here */
+.footer{
+  background-color: #0A0826;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+.footer-icons{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+
+}
+.footer-icons{
+  margin-top: 17px;
+}
+.footer-icons i{
+  text-align: center;
+ font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+  
+}
+
+.footer-title{
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.copywright, .rights{
+  color: #D9DBE1;
+}
+
+
+
+
+
+
+/* -----------------------------
+    Responsive design Here
+--------------------------------*/
+
+@media screen and (max-width: 576px) {
+  /* Navigation section */
+  .Navigation-Container,
+  .hero-section {
+    margin: 35px 16px 0;
+  }
+  .logo a {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .menues li:nth-child(-n + 5) {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .hero-title {
+    font-size: 1.75em;
+    line-height: 1.5em;
+  }
+
+  /* Main Section */
+  .main {
+    max-width: 329px;
+    margin: 0 auto;
+  }
+
+  /* Clients Logos */
+
+  .clients-logo {
+    flex-wrap: wrap;
+    gap: 23px;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .clients-logo img {
+    width: 50px;
+    height: 15px;
+  }
+
+  /* Popular products styles */
+  .popular-collections{
+    margin-top: 50px;
+  }
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  .coverage,
+  .availability,
+  .protection {
+    display: inline-block;
+    color: #787885;
+    font-size: 0.875em;
+    font-weight: 400;
+  }
+
+  .see-more-products {
+    margin-top: 30px;
+  }
+
+  /* featured products */
+  .featured-products{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature-product-title{
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  .featured-products .description-text{
+    font-weight: 700;
+    color: #6C6C6C;
+  }
+  .featured-products .action-button{
+    margin: 14px 0 30px 0;
+  }
+  .featured-product-description{
+    grid-row: 1;
+    text-align: center;
+  }
+
+  /* footer section */
+  .footer{
+    margin-top: 50px;
+  }
+  .footer-title{
+    font-size: 1em;
+  }
+  .copywright, .rights{
+    font-size: 0.7em;
+  }
+}
