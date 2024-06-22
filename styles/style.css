@@ -250,6 +250,9 @@ img {
 .copywright, .rights{
   color: #D9DBE1;
 }
+.rights{
+  margin-top: 5px;
+}
 
 
 
