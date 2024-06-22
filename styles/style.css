@@ -211,53 +211,51 @@ img {
   line-height: 3rem;
 }
 
-.featured-products .action-button{
+.featured-products .action-button {
   border-radius: 0;
 }
 
 /* Footer styles here */
-.footer{
-  background-color: #0A0826;
+.footer {
+  background-color: #0a0826;
   text-align: center;
   padding: 50px 0;
   margin-top: 100px;
 }
-.footer-icons{
+.footer-icons {
   display: flex;
   gap: 16px;
   align-items: center;
   justify-content: center;
-
 }
-.footer-icons{
+.footer-icons {
   margin-top: 17px;
 }
-.footer-icons i{
+
+.footer-icons .fa-fw{
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
   text-align: center;
- font-size: 1em;
+  font-size: 1em;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  padding: 10px;
+  padding: 5px;
   color: #fff;
-  
+  line-height: 32px;
 }
 
-.footer-title{
+.footer-title {
   font-size: 1.5em;
   color: #fff;
   margin-bottom: 5px;
 }
-.copywright, .rights{
-  color: #D9DBE1;
+.copywright, .rights {
+  color: #d9dbe1;
 }
-.rights{
+.rights {
   margin-top: 5px;
 }
-
-
-
-
-
 
 /* -----------------------------
     Responsive design Here
@@ -314,7 +312,7 @@ img {
   }
 
   /* Popular products styles */
-  .popular-collections{
+  .popular-collections {
     margin-top: 50px;
   }
   .products {
@@ -335,33 +333,44 @@ img {
   }
 
   /* featured products */
-  .featured-products{
+  .featured-products {
     grid-template-columns: repeat(1, 1fr);
   }
-  .feature-product-title{
+  .feature-product-title {
     font-size: 1.5em;
     line-height: 1.5em;
   }
-  .featured-products .description-text{
+  .featured-products .description-text {
     font-weight: 700;
-    color: #6C6C6C;
+    color: #6c6c6c;
   }
-  .featured-products .action-button{
+  .featured-products .action-button {
     margin: 14px 0 30px 0;
   }
-  .featured-product-description{
+  .featured-product-description {
     grid-row: 1;
     text-align: center;
   }
 
   /* footer section */
-  .footer{
+  .footer {
     margin-top: 50px;
   }
-  .footer-title{
+  .footer-title {
     font-size: 1em;
   }
-  .copywright, .rights{
+  .copywright,
+  .rights {
     font-size: 0.7em;
+  }
+  .footer-icons{
+    gap: 7px;
+  }
+  .footer-icons .fa-fw{
+    width: 24px;
+    height: 24px;
+    font-size: 0.6em;
+    line-height: 24px;
+    padding: 0;
   }
 }
